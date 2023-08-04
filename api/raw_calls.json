@@ -1,0 +1,75 @@
+{
+    "add_basic_authentication": false,
+    "add_offline": false,
+    "add_to_header": false,
+    "auth": "oauth2_user",
+    "authentication_url": "https://oauth.vk.com/authorize",
+    "calls": {
+        "AAX": {
+            "doc_link": "https://vk.com/dev/users.get",
+            "initialized": true,
+            "method": "get",
+            "name": "Get User info - Action",
+            "params": {
+                "AAY": {
+                    "doc": "https://vk.com/dev/fields",
+                    "key": "fields",
+                    "optional": true,
+                    "private": true,
+                    "value": "nickname, screen_name, sex, bdate (birthdate), city, country, timezone, photo, photo_medium, photo_big, has_mobile, contacts, education, online, counters, relation, last_seen, activity, can_write_private_message, can_see_all_posts, can_post, universities",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1575893711299x256226738582585340.plugin_api.AAX",
+            "types": "{\"plugin_api.AAX\":{\"caption\":\"Get User info - Action\",\"fields\":{\"_p_response\":{\"ret_value\":\"list.api.1575893711299x256226738582585340.plugin_api.AAX.response\",\"caption\":\"response\",\"path\":[\"response\"]}}},\"plugin_api.AAX.response\":{\"caption\":\"Get User info - Action response\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"path\":[\"last_name\"]},\"_p_is_closed\":{\"ret_value\":\"boolean\",\"caption\":\"is_closed\",\"path\":[\"is_closed\"]},\"_p_can_access_closed\":{\"ret_value\":\"boolean\",\"caption\":\"can_access_closed\",\"path\":[\"can_access_closed\"]},\"_p_sex\":{\"ret_value\":\"number\",\"caption\":\"sex\",\"path\":[\"sex\"]},\"_p_nickname\":{\"ret_value\":\"text\",\"caption\":\"nickname\",\"path\":[\"nickname\"]},\"_p_screen_name\":{\"ret_value\":\"text\",\"caption\":\"screen_name\",\"path\":[\"screen_name\"]},\"_p_city.id\":{\"ret_value\":\"number\",\"caption\":\"city id\",\"path\":[\"city\",\"id\"]},\"_p_city.title\":{\"ret_value\":\"text\",\"caption\":\"city title\",\"path\":[\"city\",\"title\"]},\"_p_country.id\":{\"ret_value\":\"number\",\"caption\":\"country id\",\"path\":[\"country\",\"id\"]},\"_p_country.title\":{\"ret_value\":\"text\",\"caption\":\"country title\",\"path\":[\"country\",\"title\"]},\"_p_timezone\":{\"ret_value\":\"number\",\"caption\":\"timezone\",\"path\":[\"timezone\"]},\"_p_photo\":{\"ret_value\":\"text\",\"caption\":\"photo\",\"path\":[\"photo\"]},\"_p_photo_medium\":{\"ret_value\":\"text\",\"caption\":\"photo_medium\",\"path\":[\"photo_medium\"]},\"_p_photo_big\":{\"ret_value\":\"text\",\"caption\":\"photo_big\",\"path\":[\"photo_big\"]},\"_p_has_mobile\":{\"ret_value\":\"number\",\"caption\":\"has_mobile\",\"path\":[\"has_mobile\"]},\"_p_online\":{\"ret_value\":\"number\",\"caption\":\"online\",\"path\":[\"online\"]},\"_p_can_post\":{\"ret_value\":\"number\",\"caption\":\"can_post\",\"path\":[\"can_post\"]},\"_p_can_see_all_posts\":{\"ret_value\":\"number\",\"caption\":\"can_see_all_posts\",\"path\":[\"can_see_all_posts\"]},\"_p_can_write_private_message\":{\"ret_value\":\"number\",\"caption\":\"can_write_private_message\",\"path\":[\"can_write_private_message\"]},\"_p_activity\":{\"ret_value\":\"text\",\"caption\":\"activity\",\"path\":[\"activity\"]},\"_p_last_seen.time\":{\"ret_value\":\"number\",\"caption\":\"last_seen time\",\"path\":[\"last_seen\",\"time\"]},\"_p_last_seen.platform\":{\"ret_value\":\"number\",\"caption\":\"last_seen platform\",\"path\":[\"last_seen\",\"platform\"]},\"_p_counters.albums\":{\"ret_value\":\"number\",\"caption\":\"counters albums\",\"path\":[\"counters\",\"albums\"]},\"_p_counters.videos\":{\"ret_value\":\"number\",\"caption\":\"counters videos\",\"path\":[\"counters\",\"videos\"]},\"_p_counters.audios\":{\"ret_value\":\"number\",\"caption\":\"counters audios\",\"path\":[\"counters\",\"audios\"]},\"_p_counters.photos\":{\"ret_value\":\"number\",\"caption\":\"counters photos\",\"path\":[\"counters\",\"photos\"]},\"_p_counters.groups\":{\"ret_value\":\"number\",\"caption\":\"counters groups\",\"path\":[\"counters\",\"groups\"]},\"_p_counters.gifts\":{\"ret_value\":\"number\",\"caption\":\"counters gifts\",\"path\":[\"counters\",\"gifts\"]},\"_p_counters.friends\":{\"ret_value\":\"number\",\"caption\":\"counters friends\",\"path\":[\"counters\",\"friends\"]},\"_p_counters.online_friends\":{\"ret_value\":\"number\",\"caption\":\"counters online_friends\",\"path\":[\"counters\",\"online_friends\"]},\"_p_counters.followers\":{\"ret_value\":\"number\",\"caption\":\"counters followers\",\"path\":[\"counters\",\"followers\"]},\"_p_counters.subscriptions\":{\"ret_value\":\"number\",\"caption\":\"counters subscriptions\",\"path\":[\"counters\",\"subscriptions\"]},\"_p_counters.pages\":{\"ret_value\":\"number\",\"caption\":\"counters pages\",\"path\":[\"counters\",\"pages\"]},\"_p_university\":{\"ret_value\":\"number\",\"caption\":\"university\",\"path\":[\"university\"]},\"_p_university_name\":{\"ret_value\":\"text\",\"caption\":\"university_name\",\"path\":[\"university_name\"]},\"_p_faculty\":{\"ret_value\":\"number\",\"caption\":\"faculty\",\"path\":[\"faculty\"]},\"_p_faculty_name\":{\"ret_value\":\"text\",\"caption\":\"faculty_name\",\"path\":[\"faculty_name\"]},\"_p_graduation\":{\"ret_value\":\"number\",\"caption\":\"graduation\",\"path\":[\"graduation\"]},\"_p_relation\":{\"ret_value\":\"number\",\"caption\":\"relation\",\"path\":[\"relation\"]}}}}",
+            "url": "https://api.vk.com/method/users.get?v=5.103"
+        },
+        "AAa": {
+            "0": "A",
+            "1": "A",
+            "2": "Z",
+            "doc_link": "https://vk.com/dev/users.get",
+            "initialized": true,
+            "method": "get",
+            "name": "Get User info - Data",
+            "params": {
+                "AAY": {
+                    "doc": "https://vk.com/dev/fields",
+                    "key": "fields",
+                    "optional": true,
+                    "private": true,
+                    "value": "nickname, screen_name, sex, bdate (birthdate), city, country, timezone, photo, photo_medium, photo_big, has_mobile, contacts, education, online, counters, relation, last_seen, activity, can_write_private_message, can_see_all_posts, can_post, universities",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1575893711299x256226738582585340.plugin_api.AAa",
+            "types": "{\"plugin_api.AAa\":{\"caption\":\"Get User info - Data\",\"fields\":{\"_p_response\":{\"ret_value\":\"list.api.1575893711299x256226738582585340.plugin_api.AAa.response\",\"caption\":\"response\",\"path\":[\"response\"]}}},\"plugin_api.AAa.response\":{\"caption\":\"Get User info - Data response\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"path\":[\"last_name\"]},\"_p_is_closed\":{\"ret_value\":\"boolean\",\"caption\":\"is_closed\",\"path\":[\"is_closed\"]},\"_p_can_access_closed\":{\"ret_value\":\"boolean\",\"caption\":\"can_access_closed\",\"path\":[\"can_access_closed\"]},\"_p_sex\":{\"ret_value\":\"number\",\"caption\":\"sex\",\"path\":[\"sex\"]},\"_p_nickname\":{\"ret_value\":\"text\",\"caption\":\"nickname\",\"path\":[\"nickname\"]},\"_p_screen_name\":{\"ret_value\":\"text\",\"caption\":\"screen_name\",\"path\":[\"screen_name\"]},\"_p_city.id\":{\"ret_value\":\"number\",\"caption\":\"city id\",\"path\":[\"city\",\"id\"]},\"_p_city.title\":{\"ret_value\":\"text\",\"caption\":\"city title\",\"path\":[\"city\",\"title\"]},\"_p_country.id\":{\"ret_value\":\"number\",\"caption\":\"country id\",\"path\":[\"country\",\"id\"]},\"_p_country.title\":{\"ret_value\":\"text\",\"caption\":\"country title\",\"path\":[\"country\",\"title\"]},\"_p_timezone\":{\"ret_value\":\"number\",\"caption\":\"timezone\",\"path\":[\"timezone\"]},\"_p_photo\":{\"ret_value\":\"text\",\"caption\":\"photo\",\"path\":[\"photo\"]},\"_p_photo_medium\":{\"ret_value\":\"text\",\"caption\":\"photo_medium\",\"path\":[\"photo_medium\"]},\"_p_photo_big\":{\"ret_value\":\"text\",\"caption\":\"photo_big\",\"path\":[\"photo_big\"]},\"_p_has_mobile\":{\"ret_value\":\"number\",\"caption\":\"has_mobile\",\"path\":[\"has_mobile\"]},\"_p_online\":{\"ret_value\":\"number\",\"caption\":\"online\",\"path\":[\"online\"]},\"_p_can_post\":{\"ret_value\":\"number\",\"caption\":\"can_post\",\"path\":[\"can_post\"]},\"_p_can_see_all_posts\":{\"ret_value\":\"number\",\"caption\":\"can_see_all_posts\",\"path\":[\"can_see_all_posts\"]},\"_p_can_write_private_message\":{\"ret_value\":\"number\",\"caption\":\"can_write_private_message\",\"path\":[\"can_write_private_message\"]},\"_p_activity\":{\"ret_value\":\"text\",\"caption\":\"activity\",\"path\":[\"activity\"]},\"_p_last_seen.time\":{\"ret_value\":\"number\",\"caption\":\"last_seen time\",\"path\":[\"last_seen\",\"time\"]},\"_p_last_seen.platform\":{\"ret_value\":\"number\",\"caption\":\"last_seen platform\",\"path\":[\"last_seen\",\"platform\"]},\"_p_counters.albums\":{\"ret_value\":\"number\",\"caption\":\"counters albums\",\"path\":[\"counters\",\"albums\"]},\"_p_counters.videos\":{\"ret_value\":\"number\",\"caption\":\"counters videos\",\"path\":[\"counters\",\"videos\"]},\"_p_counters.audios\":{\"ret_value\":\"number\",\"caption\":\"counters audios\",\"path\":[\"counters\",\"audios\"]},\"_p_counters.photos\":{\"ret_value\":\"number\",\"caption\":\"counters photos\",\"path\":[\"counters\",\"photos\"]},\"_p_counters.groups\":{\"ret_value\":\"number\",\"caption\":\"counters groups\",\"path\":[\"counters\",\"groups\"]},\"_p_counters.gifts\":{\"ret_value\":\"number\",\"caption\":\"counters gifts\",\"path\":[\"counters\",\"gifts\"]},\"_p_counters.friends\":{\"ret_value\":\"number\",\"caption\":\"counters friends\",\"path\":[\"counters\",\"friends\"]},\"_p_counters.online_friends\":{\"ret_value\":\"number\",\"caption\":\"counters online_friends\",\"path\":[\"counters\",\"online_friends\"]},\"_p_counters.followers\":{\"ret_value\":\"number\",\"caption\":\"counters followers\",\"path\":[\"counters\",\"followers\"]},\"_p_counters.subscriptions\":{\"ret_value\":\"number\",\"caption\":\"counters subscriptions\",\"path\":[\"counters\",\"subscriptions\"]},\"_p_counters.pages\":{\"ret_value\":\"number\",\"caption\":\"counters pages\",\"path\":[\"counters\",\"pages\"]},\"_p_university\":{\"ret_value\":\"number\",\"caption\":\"university\",\"path\":[\"university\"]},\"_p_university_name\":{\"ret_value\":\"text\",\"caption\":\"university_name\",\"path\":[\"university_name\"]},\"_p_faculty\":{\"ret_value\":\"number\",\"caption\":\"faculty\",\"path\":[\"faculty\"]},\"_p_faculty_name\":{\"ret_value\":\"text\",\"caption\":\"faculty_name\",\"path\":[\"faculty_name\"]},\"_p_graduation\":{\"ret_value\":\"number\",\"caption\":\"graduation\",\"path\":[\"graduation\"]},\"_p_relation\":{\"ret_value\":\"number\",\"caption\":\"relation\",\"path\":[\"relation\"]}}}}",
+            "url": "https://api.vk.com/method/users.get?v=5.103"
+        },
+        "token_call": {
+            "method": "post",
+            "url": ""
+        }
+    },
+    "email_path": "",
+    "generate_token_from_code_uri": "https://oauth.vk.com/access_token",
+    "header_key": "Authorization: Bearer",
+    "human": "VKontakte",
+    "id_path": "response.0.id",
+    "oauth_user_data_call": "https://api.vk.com/method/users.get?v=5.103",
+    "scope": "",
+    "shared_headers": {
+        "AAC": {
+            "key": "content-type",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        }
+    },
+    "token_data_type": false,
+    "token_param_name": "access_token"
+}

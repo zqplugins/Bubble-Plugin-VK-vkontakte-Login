@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "social network"
+    },
+    "demo_page": "https://ezcodedemo3.bubbleapps.io/version-test/vklogin",
+    "description": "This plugin enables VK.com authorization functionality.\n\n🔔 Get our 10 Top Plugins Bundle with 10 most popular plugins for only 20$/month.\nPlugins included in the Bundle:\n\n- Bubble Page to PDF converter\n- #1 Stripe Marketplace Express\n- Air Calendar (Full Calendar 5.9.0)\n- #1 AWS File uploader - Any size\n- Advanced Rich Text Editor\n- Mapbox Map\n- Phone input Number with formatting\n- Advanced Multi Uploader\n- Video player\n- Dynamic Height & Width of Elements\n\nGet it here: https://zeroqode.com/bundle\n\nDEMO & DOCUMENTATION\n\nNEED HELP BUILDING A CUSTOM APPLICATION?\nhttps://dev.zeroqode.com\n\nSUPERCHARGE YOUR APP WITH ZEROQODE PLUGINS\nhttps://zeroqode.com/plugins\n\nQUESTIONS OR NEED HELP?\nhttps://forum.zeroqode.com",
+    "image": "//s3.amazonaws.com/appforest_uf/f1575893691351x974357092341252100/vk_logo_27062019.png",
+    "license": "open_source",
+    "link": "https://zeroqode.com/plugins",
+    "name": "VK (vkontakte) Login",
+    "plugin_instructions": ""
+}
